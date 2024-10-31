@@ -1,0 +1,51 @@
+{
+  "originHash" : "24875d30f5776ed4a35c71913f37fb1df95c46f863bdca8af35f6c4c1663c4b8",
+  "pins" : [
+    {
+      "identity" : "fuzi",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/cezheng/Fuzi.git",
+      "state" : {
+        "revision" : "f08c8323da21e985f3772610753bcfc652c2103f",
+        "version" : "3.1.3"
+      }
+    },
+    {
+      "identity" : "pugiswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elihwyma/PugiSwift.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "1d1c65ec7d98718d87e9a02b58b22e3f1e692bcc"
+      }
+    },
+    {
+      "identity" : "swift-macro-toolkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stackotter/swift-macro-toolkit.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fe6653d8e85d398c831b252ac9e0124304dc8782"
+      }
+    },
+    {
+      "identity" : "swift-syntax",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/swiftlang/swift-syntax.git",
+      "state" : {
+        "revision" : "0687f71944021d616d34d922343dcef086855920",
+        "version" : "600.0.1"
+      }
+    },
+    {
+      "identity" : "xmlcoder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/CoreOffice/XMLCoder.git",
+      "state" : {
+        "revision" : "b1e944cbd0ef33787b13f639a5418d55b3bed501",
+        "version" : "0.17.1"
+      }
+    }
+  ],
+  "version" : 3
+}

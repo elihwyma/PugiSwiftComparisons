@@ -5,8 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "PugiSwiftComparisons",
+    platforms: [
+        .macOS(.v13)
+    ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.2.0"),
+        .package(url: "https://github.com/elihwyma/PugiSwift.git", branch: "main"),
+        .package(url: "https://github.com/CoreOffice/XMLCoder.git", from: "0.17.0"),
+        .package(url: "https://github.com/cezheng/Fuzi.git", from: "3.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -14,7 +19,16 @@ let package = Package(
         .executableTarget(
             name: "PugiSwiftComparisons",
             dependencies: [
-                .product(name: "ArgumentParser", package: "swift-argument-parser"),
+                .product(name: "PugiSwift", package: "PugiSwift"),
+                .product(name: "Fuzi", package: "Fuzi"),
+                .product(name: "XMLCoder", package: "XMLCoder")
+            ],
+            swiftSettings: [
+                .interoperabilityMode(.Cxx),
+                .swiftLanguageMode(.v6),
+                .unsafeFlags([
+                    "-Xcc", "-std=c++20"
+                ])
             ]
         ),
     ]
